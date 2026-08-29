@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "judul": "Petualangan Kisah Naga Abadi",
+    "kategori": "RPG",
+    "tahun": 2026,
+    "ringkasan": "Kamu adalah penunggang naga terakhir. Jelajahi 5 kerajaan elemental dan kumpulkan pecahan jiwa naga.",
+    "gambar": "https://images.unsplash.com/photo-1577493340887-b7bccc9106d1?w=900&h=600&fit=crop",
+    "deskripsi": [
+      "Main sebagai Arin yang terikat dengan Naga Abadi Veylor.",
+      "Fitur terbang bebas, pohon skill 4 elemen, dan ending bercabang."
+    ],
+    "teknologi": ["Unity", "C#", "Pixel Art"],
+    "tautan": [{ "label": "Lihat Demo", "url": "#" }]
+  },
+  {
+    "id": 2,
+    "judul": "Naga Abadi: Kebangkitan Veylor",
+    "kategori": "Action",
+    "tahun": 2026,
+    "ringkasan": "Game hack and slash. Kendalikan Veylor sang Naga Abadi untuk membasmi pasukan kegelapan.",
+    "gambar": "https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?w=900&h=600&fit=crop",
+    "deskripsi": [
+      "Kombat cepat dengan serangan api, es, dan petir.",
+      "Upgrade sisik dan sayap naga untuk jadi lebih kuat."
+    ],
+    "teknologi": ["Unreal Engine 5", "Combat System"],
+    "tautan": [{ "label": "Lihat Trailer", "url": "#" }]
+  },
+  {
+    "id": 3,
+    "judul": "Legenda 5 Naga Penjaga",
+    "kategori": "Adventure",
+    "tahun": 2025,
+    "ringkasan": "Game puzzle petualangan. Bantu 5 Naga Penjaga memulihkan keseimbangan dunia.",
+    "gambar": "https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=900&h=600&fit=crop",
+    "deskripsi": [
+      "Setiap naga punya kekuatan unik: Air, Api, Tanah, Angin, Cahaya.",
+      "Pecahkan teka-teki di kuil kuno untuk membangunkan mereka."
+    ],
+    "teknologi": ["Godot", "2D Adventure"],
+    "tautan": [{ "label": "Download", "url": "#" }]
+  }
+]
