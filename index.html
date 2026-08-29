@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Katalog Kisah Naga Abadi</title>
+  <style>
+    body { background: #050510; color: #fff; font-family: 'Segoe UI'; margin: 0; padding: 20px; background-image: linear-gradient(to bottom, #050510, #1a0a2e); }
+    h1 { text-align: center; color: gold; text-shadow: 0 0 10px gold; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; max-width: 1200px; margin: auto; }
+    .card { background: #1a0a2e; border-radius: 12px; overflow: hidden; border: 2px solid #4a2c17; transition: 0.3s; }
+    .card:hover { transform: translateY(-5px); border-color: gold; box-shadow: 0 0 20px rgba(255, 215, 0, 0.3); }
+    .card img { width: 100%; height: 180px; object-fit: cover; }
+    .card-body { padding: 15px; }
+    .tag { background: gold; color: #000; padding: 3px 8px; border-radius: 5px; font-size: 12px; margin-right: 5px; font-weight: bold; }
+    .btn { display: inline-block; margin-top: 10px; padding: 8px 15px; background: linear-gradient(45deg, gold, orange); color: #000; text-decoration: none; border-radius: 5px; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <h1>🐉 KATALOG KISAH NAGA ABADI 🐉</h1>
+  <div class="grid" id="gameList"></div>
+
+  <script>
+    fetch('konten.json')
+      .then(res => res.json())
+      .then(data => {
+        const container = document.getElementById('gameList');
+        data.forEach(game => {
+          container.innerHTML += `
+            <div class="card">
+              <img src="${game.gambar}" alt="${game.judul}">
+              <div class="card-body">
+                <h2>${game.judul}</h2>
+                <span class="tag">${game.kategori}</span> <span class="tag">${game.tahun}</span>
+                <p>${game.ringkasan}</p>
+                <a href="${game.tautan[0].url}" class="btn">${game.tautan[0].label}</a>
+              </div>
+            </div>
+          `;
+        });
+      });
+  </script>
+</body>
+</html>
